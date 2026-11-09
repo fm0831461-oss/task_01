@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_01/page1.dart';
 
 class Page2 extends StatefulWidget {
   const Page2({super.key});
@@ -103,6 +104,15 @@ class _Page2State extends State<Page2> {
                   child: Text("Reset"),
                   backgroundColor: Colors.red,
                 ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Page1()),
+                  );
+                },
+                child: Text("Show Team A"),
               ),
             ],
           ),

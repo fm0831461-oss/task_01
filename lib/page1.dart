@@ -106,18 +106,12 @@ class _Page1State extends State<Page1> {
                   backgroundColor: Colors.red,
                 ),
               ),
-              // ElevatedButton(
-              //   onPressed: () {
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(builder: (context) => Page2()),
-              //     );
-              //   },
-              //   child: Text("Show Team B"),
-              // ),
               ElevatedButton(
                 onPressed: () {
-                  print("Button Clicked");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Page2()),
+                  );
                 },
                 child: Text("Show Team B"),
               ),
