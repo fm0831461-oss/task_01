@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task_01/page2.dart';
+import 'package:task_01/TaskBasketBALL/page2.dart';
 
 class Page1 extends StatefulWidget {
   const Page1({super.key});
@@ -10,7 +10,7 @@ class Page1 extends StatefulWidget {
 
 class _Page1State extends State<Page1> {
   int count = 0;
-  Color bg_color = Colors.white;
+  Color bgColor = Colors.white;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _Page1State extends State<Page1> {
         behavior: HitTestBehavior.opaque,
         onTap: () {
           setState(() {
-            bg_color = bg_color == Colors.white
+            bgColor = bgColor == Colors.white
                 ? const Color.fromARGB(255, 191, 103, 103)
                 : Colors.white;
           });
@@ -38,7 +38,7 @@ class _Page1State extends State<Page1> {
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          color: bg_color,
+          color: bgColor,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -60,8 +60,8 @@ class _Page1State extends State<Page1> {
                       count++;
                     });
                   },
-                  child: Text("Add 1Point"),
                   backgroundColor: Colors.red,
+                  child: Text("Add 1Point"),
                 ),
               ),
               SizedBox(height: 10),
@@ -74,8 +74,8 @@ class _Page1State extends State<Page1> {
                       count += 2;
                     });
                   },
-                  child: Text("Add 2 Point"),
                   backgroundColor: Colors.red,
+                  child: Text("Add 2 Point"),
                 ),
               ),
               SizedBox(height: 10),
@@ -88,8 +88,8 @@ class _Page1State extends State<Page1> {
                       count += 3;
                     });
                   },
-                  child: Text("Add 3 Point"),
                   backgroundColor: Colors.red,
+                  child: Text("Add 3 Point"),
                 ),
               ),
               SizedBox(height: 50),
@@ -102,8 +102,8 @@ class _Page1State extends State<Page1> {
                       count = 0;
                     });
                   },
-                  child: Text("Reset"),
                   backgroundColor: Colors.red,
+                  child: Text("Reset"),
                 ),
               ),
               ElevatedButton(
